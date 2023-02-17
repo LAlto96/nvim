@@ -18,3 +18,7 @@ g.vimtex_view_method = 'zathura'
 -- empty setup using defaults
 require("nvim-tree").setup()
 vim.api.nvim_set_keymap('n', '<F4>', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+-- Enable COQ at start
+g.coq_settings = {
+  auto_start = true,
+}
